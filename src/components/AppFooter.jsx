@@ -12,8 +12,8 @@ export default function AppFooter() {
     <footer className="">
       <div className="main-footer">
         <div className="container">
-          <div className="row py-5">
-            <div className="col-6 col-md-4 col-lg-2">
+          <div className="row">
+            <div className="col-12 col-md-6 col-lg-2">
               <ul className="list-unstyled">
                 <li>DC COMICS</li>
                 <li>Characters</li>
@@ -30,7 +30,7 @@ export default function AppFooter() {
                 <li>Shop DC Collectibles</li>
               </ul>
             </div>
-            <div className="col-6 col-md-4 col-lg-2">
+            <div className="col-12 col-md-6 col-lg-2">
               <ul className="list-unstyled">
                 <li>DC</li>
                 <li>Terms Of Use</li>
@@ -46,7 +46,7 @@ export default function AppFooter() {
                 <li>Contact Us</li>
               </ul>
             </div>
-            <div className="col-6 col-md-4 col-lg-2">
+            <div className="col-12 col-md-6 col-lg-2">
               <ul className="list-unstyled">
                 <li>SITES</li>
                 <li>DC</li>
@@ -56,18 +56,18 @@ export default function AppFooter() {
                 <li>DC Power Visa</li>
               </ul>
             </div>
-            <div className="col-12 col-lg-6 position-relative">
-              <img id="footer-logo" src={dcLogoBg} alt="" className="img-fluid position-absolute" />
+            <div id="footer-logo" className="col-12 col-lg-6 position-relative">
+              <img src={dcLogoBg} alt="" className="img-fluid position-absolute" />
             </div>
           </div>
         </div>
       </div>
       <div className="bottom-footer position-relative z-1">
-        <div className="container d-flex justify-content-between">
-          <div className="py-5">
-            <button className="btn btn-outline-primary text-white rounded-0">SIGN-UP NOW!</button>
+        <div className="container d-flex justify-content-between align-items-center flex-wrap">
+          <div className="py-5 flex-shrink-0">
+            <button className="btn btn-outline-primary text-white rounded-0">SIGN-UPNOW!</button>
           </div>
-          <div className="py-5">
+          <div className="py-1 py-md-3 py-lg-5">
             <a href="#" className="text-decoration-none fw-bold">FOLLOW US</a>
             <a href="#"><img src={facebookLogo} alt="facebook logo" /></a>
             <a href="#"><img src={twitterLogo} alt="twitter logo" /></a>
