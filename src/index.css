@@ -1,9 +1,41 @@
 @import url('bootstrap');
 
+
 body {
   font-family: 'Open Sans Variable', sans-serif;
 }
 
-#logo {
-  top: -8rem;
+/* footer */
+
+
+
+footer {
+  color: #6f787d;
+}
+
+.main-footer {
+  background-image: url(../public/footer-bg.jpg);
+  background-size: cover;
+
+  ul li:first-child {
+    color: white;
+    font-size: larger;
+    font-weight: 600;
+    padding: 0.5rem 0;
+  }
+
+  #footer-logo {
+    aspect-ratio: 1 / 1;
+    transform: translatey(-50%);
+    top: 50%;
+  }
+}
+
+
+.bottom-footer {
+  background-color: #303030;
+
+  img[alt~="logo"] {
+    padding: 0 0.6rem;
+  }
 }

@@ -1,42 +1,21 @@
-import digitalComics from '/buy-comics-digital-comics.png'
 import dcLogoBg from '/dc-logo-bg.png'
+import facebookLogo from '/footer-facebook.png'
+import twitterLogo from '/footer-twitter.png'
+import youtubeLogo from '/footer-youtube.png'
+import pinterestLogo from '/footer-pinterest.png'
+import periscopeLogo from '/footer-periscope.png'
+
 
 export default function AppFooter() {
 
   return (
-    <footer className="text-white">
-      <div className="top-footer bg-primary position-relative z-1">
-        <div className="container">
-          <figure className="d-flex py-2 m-0">
-            <div className="d-flex align-items-center">
-              <img src={digitalComics} alt="" className="img-fluid h-50" />
-              <figcaption className="px-3">DIGITAL COMICS</figcaption>
-            </div>
-            <div className="d-flex align-items-center">
-              <img src={digitalComics} alt="" className="img-fluid h-50" />
-              <figcaption className="px-3">DC MERCHANDISE</figcaption>
-            </div>
-            <div className="d-flex align-items-center">
-              <img src={digitalComics} alt="" className="img-fluid h-50" />
-              <figcaption className="px-3">SUBSCRIPTION</figcaption>
-            </div>
-            <div className="d-flex align-items-center">
-              <img src={digitalComics} alt="" className="img-fluid h-50" />
-              <figcaption className="px-3">COMIC SHOP LOCATOR</figcaption>
-            </div>
-            <div className="d-flex align-items-center">
-              <img src={digitalComics} alt="" className="img-fluid h-50" />
-              <figcaption className="px-3">DC POWER VISA</figcaption>
-            </div>
-          </figure>
-        </div>
-      </div>
-      <div className="main-footer bg-dark">
+    <footer className="">
+      <div className="main-footer">
         <div className="container">
           <div className="row py-5">
-            <div className="col-2">
+            <div className="col-6 col-md-4 col-lg-2">
               <ul className="list-unstyled">
-                <li><strong className="h4">DC COMICS</strong></li>
+                <li>DC COMICS</li>
                 <li>Characters</li>
                 <li>Comics</li>
                 <li>Movies</li>
@@ -46,14 +25,14 @@ export default function AppFooter() {
                 <li>News</li>
               </ul>
               <ul className="list-unstyled">
-                <li><strong className="h4">SHOP</strong></li>
+                <li>SHOP</li>
                 <li>Shop DC</li>
                 <li>Shop DC Collectibles</li>
               </ul>
             </div>
-            <div className="col-2">
+            <div className="col-6 col-md-4 col-lg-2">
               <ul className="list-unstyled">
-                <li><strong className="h4">DC</strong></li>
+                <li>DC</li>
                 <li>Terms Of Use</li>
                 <li>Privacy policy (New)</li>
                 <li>Ad Choices</li>
@@ -67,9 +46,9 @@ export default function AppFooter() {
                 <li>Contact Us</li>
               </ul>
             </div>
-            <div className="col-2">
+            <div className="col-6 col-md-4 col-lg-2">
               <ul className="list-unstyled">
-                <li><strong className="h4">SITES</strong></li>
+                <li>SITES</li>
                 <li>DC</li>
                 <li>MAD Magazine</li>
                 <li>DC Kids</li>
@@ -77,15 +56,25 @@ export default function AppFooter() {
                 <li>DC Power Visa</li>
               </ul>
             </div>
-            <div className="col-6 position-relative">
-              <img id="logo" src={dcLogoBg} alt="" className="position-absolute" />
+            <div className="col-12 col-lg-6 position-relative">
+              <img id="footer-logo" src={dcLogoBg} alt="" className="img-fluid position-absolute" />
             </div>
           </div>
         </div>
       </div>
-      <div className="bottom-footer bg-primary">
-        <div className="container">
-
+      <div className="bottom-footer position-relative z-1">
+        <div className="container d-flex justify-content-between">
+          <div className="py-5">
+            <button className="btn btn-outline-primary text-white rounded-0">SIGN-UP NOW!</button>
+          </div>
+          <div className="py-5">
+            <a href="#" className="text-decoration-none fw-bold">FOLLOW US</a>
+            <a href="#"><img src={facebookLogo} alt="facebook logo" /></a>
+            <a href="#"><img src={twitterLogo} alt="twitter logo" /></a>
+            <a href="#"><img src={youtubeLogo} alt="youtube logo" /></a>
+            <a href="#"><img src={pinterestLogo} alt="pinterest logo" /></a>
+            <a href="#"><img src={periscopeLogo} alt="periscope logo" /></a>
+          </div>
         </div>
       </div>
     </footer>
