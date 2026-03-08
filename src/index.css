@@ -12,13 +12,11 @@ body {
 
 /* header */
 
-
 .nav-item {
   display: flex;
   align-items: center;
   position: relative;
 }
-
 
 .nav-link::after {
   content: "";
