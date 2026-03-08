@@ -42,7 +42,7 @@ body {
   .col {
     min-width: 11.6rem;
     padding: 1rem 0.2rem;
-    margin: auto 0;
+    margin: auto auto;
   }
 
   .col a {
