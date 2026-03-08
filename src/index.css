@@ -1,9 +1,7 @@
 @import url('bootstrap');
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+:root {
+  --dc-blu: #0282f9;
 }
 
 body {
@@ -28,44 +26,51 @@ body {
   border-bottom: 0.4rem solid #0282f900;
   transition-duration: 0.15s;
   transition-timing-function: linear;
-  
+
 }
+
 .nav-link:hover::after {
-  border-bottom: 0.4rem solid #0282f9;
+  border-bottom: 0.4rem solid var(--dc-blu);
 }
 
 .nav-link:hover {
-  color: #0282f9;
-
+  color: var(--dc-blu);
 }
 
 /* banner menu */
-section .row .col {
-  min-width: 14.5rem;
-  padding: 1rem 0.5rem;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  flex-grow: 0;
-}
+#banner-menu {
+  background-color: var(--dc-blu);
 
-section .row .col a{
-  font-size: 0.9rem;
-  font-weight: 500;
-  text-decoration: none;
-  color: white;
+  .col {
+    min-width: 14.5rem;
+    padding: 1rem 0.5rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-grow: 0;
+  }
 
-  .img-fluid {
-    width: auto;
-    height: 3rem;
-    margin: 0.5rem;
+  .col a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+
+    .img-fluid {
+      width: auto;
+      height: 3rem;
+      margin: 0.5rem;
+    }
+  }
+  
+  .col:last-child a .img-fluid {
+    width: 3rem;
+    height: auto;
   }
 }
 
-section .row .col:last-child a .img-fluid{
-  width: 3rem;
-  height: auto;
-}
+
+
 
 
 /* footer */

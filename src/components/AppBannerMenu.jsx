@@ -7,23 +7,23 @@ import dcPowerVisa from '/buy-dc-power-visa.svg'
 export default function AppBannerMenu() {
 
   return (
-    <section className="bg-primary text-white position-relative z-1">
+    <section id="banner-menu" className="text-white position-relative z-1">
       <div className="container">
         <figure className="row row-cols-sm-2 row-cols-md-3 row-cols-lg-5 p-3 mb-0">
           <div className="col">
-            <a href="#"><img src={digitalComics} alt="" className="img-fluid" />DIGITAL&nbsp;COMICS</a>
+            <a href="#"><img src={digitalComics} alt="icon digital comics" className="img-fluid" />DIGITAL&nbsp;COMICS</a>
             </div>
           <div className="col">
-            <a href="#"><img src={dcMerchandise} alt="" className="img-fluid" />DC&nbsp;MERCHANDISE</a>
+            <a href="#"><img src={dcMerchandise} alt="icon dc merchandise" className="img-fluid" />DC&nbsp;MERCHANDISE</a>
             </div>
           <div className="col">
-            <a href="#"><img src={subscription} alt="" className="img-fluid" />SUBSCRIPTION</a>
+            <a href="#"><img src={subscription} alt="icon subscription" className="img-fluid" />SUBSCRIPTION</a>
             </div>
           <div className="col">
-            <a href="#"><img src={comicShopLocator} alt="" className="img-fluid" />COMIC&nbsp;SHOP&nbsp;LOCATOR</a>
+            <a href="#"><img src={comicShopLocator} alt="icon comic shop locator" className="img-fluid" />COMIC&nbsp;SHOP&nbsp;LOCATOR</a>
             </div>
           <div className="col">
-            <a href="#"><img src={dcPowerVisa} alt="" className="img-fluid" />DC&nbsp;POWER&nbsp;VISA</a>
+            <a href="#"><img src={dcPowerVisa} alt="icon dc power visa" className="img-fluid" />DC&nbsp;POWER&nbsp;VISA</a>
             </div>
         </figure>
       </div>
