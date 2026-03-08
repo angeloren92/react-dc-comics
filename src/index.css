@@ -95,8 +95,4 @@ footer {
 
 .bottom-footer {
   background-color: #303030;
-
-  img[alt~="logo"] {
-    padding: 0 0.6rem;
-  }
 }
