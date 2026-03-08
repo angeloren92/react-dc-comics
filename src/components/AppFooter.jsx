@@ -1,12 +1,10 @@
-import dcLogoBg from '/dc-logo-bg.png'
-
 export default function AppFooter() {
 
   return (
     <footer >
       <div className="container">
-        <section className="row">
-          <div className="col-sm-6 col-md-3 col-lg-2">
+        <section className="row row-cols-2 row-cols-md-4 row-cols-lg-6">
+          <div className="col">
             <ul className="list-unstyled">
               <li>DC COMICS</li>
               <li>Characters</li>
@@ -23,7 +21,7 @@ export default function AppFooter() {
               <li>Shop DC Collectibles</li>
             </ul>
           </div>
-          <div className="col-sm-6 col-md-3 col-lg-2">
+          <div className="col">
             <ul className="list-unstyled">
               <li>DC</li>
               <li>Terms Of Use</li>
@@ -39,7 +37,7 @@ export default function AppFooter() {
               <li>Contact Us</li>
             </ul>
           </div>
-          <div className="col-sm-6 col-md-3 col-lg-2">
+          <div className="col">
             <ul className="list-unstyled">
               <li>SITES</li>
               <li>DC</li>
