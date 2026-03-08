@@ -69,12 +69,8 @@ body {
   }
 }
 
-
-
-
-
 /* footer */
-.main-footer {
+footer {
   background-image: url(../public/footer-bg.jpg);
   background-size: cover;
   background-position: center;
