@@ -4,21 +4,29 @@ import subscription from '/buy-comics-subscriptions.png'
 import comicShopLocator from '/buy-comics-shop-locator.png'
 import dcPowerVisa from '/buy-dc-power-visa.svg'
 
-export default function AppBannerMenu(){
+export default function AppBannerMenu() {
 
   return (
-    <div className="top-footer bg-primary position-relative z-1">
+    <section className="bg-primary text-white position-relative z-1">
       <div className="container">
-        <figure className="d-flex justify-content-evenly align-items-center mb-0 py-3">
-          <ul className="">
-            <a><img src={digitalComics} alt="" className="img-fluid" />DIGITAL&nbsp;COMICS</a>
-            <a><img src={dcMerchandise} alt="" className="img-fluid" />DC&nbsp;MERCHANDISE</a>
-            <a><img src={subscription} alt="" className="img-fluid" />SUBSCRIPTION</a>
-            <a><img src={comicShopLocator} alt="" className="img-fluid" />COMIC&nbsp;SHOP&nbsp;LOCATOR</a>
-            <a><img src={dcPowerVisa} alt="" className="img-fluid" />DC&nbsp;POWER&nbsp;VISA</a>
-          </ul>
+        <figure className="row row-cols-sm-2 row-cols-md-3 row-cols-lg-5 p-3 mb-0">
+          <div className="col">
+            <a href="#"><img src={digitalComics} alt="" className="img-fluid" />DIGITAL&nbsp;COMICS</a>
+            </div>
+          <div className="col">
+            <a href="#"><img src={dcMerchandise} alt="" className="img-fluid" />DC&nbsp;MERCHANDISE</a>
+            </div>
+          <div className="col">
+            <a href="#"><img src={subscription} alt="" className="img-fluid" />SUBSCRIPTION</a>
+            </div>
+          <div className="col">
+            <a href="#"><img src={comicShopLocator} alt="" className="img-fluid" />COMIC&nbsp;SHOP&nbsp;LOCATOR</a>
+            </div>
+          <div className="col">
+            <a href="#"><img src={dcPowerVisa} alt="" className="img-fluid" />DC&nbsp;POWER&nbsp;VISA</a>
+            </div>
         </figure>
       </div>
-    </div>
+    </section>
   )
 }

@@ -39,8 +39,36 @@ body {
 
 }
 
-/* footer */
+/* banner menu */
+section .row .col {
+  min-width: 14.5rem;
+  padding: 1rem 0.5rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-grow: 0;
+}
 
+section .row .col a{
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+
+  .img-fluid {
+    width: auto;
+    height: 3rem;
+    margin: 0.5rem;
+  }
+}
+
+section .row .col:last-child a .img-fluid{
+  width: 3rem;
+  height: auto;
+}
+
+
+/* footer */
 .main-footer {
   background-image: url(../public/footer-bg.jpg);
   background-size: cover;
@@ -68,7 +96,6 @@ body {
     left: 50%
   }
 }
-
 
 .bottom-footer {
   background-color: #303030;
