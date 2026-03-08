@@ -5,7 +5,7 @@ export default function AppFooter() {
   return (
     <footer >
       <div className="container">
-        <div className="row">
+        <section className="row">
           <div className="col-sm-6 col-md-3 col-lg-2">
             <ul className="list-unstyled">
               <li>DC COMICS</li>
@@ -49,10 +49,7 @@ export default function AppFooter() {
               <li>DC Power Visa</li>
             </ul>
           </div>
-          <div id="footer-logo" className="col-12 col-lg-6 position-relative">
-            <img src={dcLogoBg} alt="" className="img-fluid position-absolute" />
-          </div>
-        </div>
+        </section>
       </div>
     </footer>
   )

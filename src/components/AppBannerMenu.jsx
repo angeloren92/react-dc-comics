@@ -7,7 +7,7 @@ import dcPowerVisa from '/buy-dc-power-visa.svg'
 export default function AppBannerMenu() {
 
   return (
-    <section id="banner-menu" className="text-white position-relative z-1">
+    <section id="banner-menu" className="text-white">
       <div className="container">
         <figure className="row row-cols-sm-2 row-cols-md-3 row-cols-lg-5 p-3 mb-0">
           <div className="col">

@@ -8,7 +8,7 @@ import periscopeLogo from '/footer-periscope.png'
 export default function AppBottomFooter() {
 
     return (
-        <section className="bottom-footer position-relative z-1">
+        <section className="bottom-footer">
             <div className="container d-flex justify-content-between align-items-center flex-wrap">
                 <div className="py-5 flex-shrink-0">
                     <button className="btn btn-outline-primary text-white rounded-0">SIGN-UPNOW!</button>

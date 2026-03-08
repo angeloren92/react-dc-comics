@@ -71,11 +71,13 @@ body {
 
 /* footer */
 footer {
-  background-image: url(../public/footer-bg.jpg);
-  background-size: cover;
-  background-position: center;
+  background-image: url(../public/dc-logo-bg.png), url(../public/footer-bg.jpg);
+  background-size: 38rem, cover;
+  background-position: right center, center;
+  background-position-x: 80%,center;
+  background-repeat: no-repeat, repeat;
   color: #909699;
-
+  
   .row {
     padding: 2rem 0;
   }
@@ -87,17 +89,6 @@ footer {
     padding: 0.6rem 0;
   }
 
-  #footer-logo {
-    min-height: 25rem
-  }
-
-  #footer-logo img {
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    height: 35rem;
-    width: 35rem;
-  }
 }
 
 /* bottom-footer */
