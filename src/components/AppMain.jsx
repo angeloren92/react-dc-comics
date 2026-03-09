@@ -171,7 +171,7 @@ export default function AppMain() {
       <div id="jumbotron"></div>
       <div className="container position-relative">
         <span className="label position fw-bold position-absolute translate-middle-y">CURRENT SERIES</span>
-        <section className="row row-cols-sm-2 row-cols-md-4 row-cols-lg-6 py-3 py-md-4 py-lg-5">
+        <section className="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-6 py-5">
           {markup(comics)}
           <div className="col-12 m-auto">
             <button type="button" className="btn btn-primary w-100 rounded-0">LOAD MORE</button>
