@@ -38,6 +38,16 @@ body {
 
 }
 
+/* jumbotron */
+#jumbotron {
+  height: 50vh;
+  background-image: url(../public/jumbotron.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+
 
 /* banner menu */
 #banner-menu {
