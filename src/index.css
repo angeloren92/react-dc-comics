@@ -43,9 +43,28 @@ main {
   background-color: #1c1c1c;
 
 
+  .card {
+    overflow: hidden;
+  }
+  
   .img-fluid {
     width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: top;
   }
+
+  .img-fluid[alt~="Action"], 
+  .img-fluid[alt~="Catwoman"] {
+    transform-origin: top;
+    transform: scale(1.6);
+  }
+
+  p {
+    font-size: 0.8rem;
+    color: white;
+  }
+
 }
 
 /* jumbotron */
