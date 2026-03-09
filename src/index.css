@@ -65,6 +65,17 @@ main {
     color: white;
   }
 
+  .btn {
+    background-color: var(--dc-blu);
+  }
+
+  .label {
+    color: white;
+    background-color: var(--dc-blu);
+    padding: 0.5rem 1rem;
+    left: -0.5rem;
+  }
+
 }
 
 /* jumbotron */
