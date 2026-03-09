@@ -38,6 +38,16 @@ body {
 
 }
 
+/* main */
+main {
+  background-color: #1c1c1c;
+
+
+  .img-fluid {
+    width: 100%;
+  }
+}
+
 /* jumbotron */
 #jumbotron {
   height: 50vh;
@@ -47,7 +57,7 @@ body {
   background-size: cover;
 }
 
-
+/* cards */
 
 /* banner menu */
 #banner-menu {

@@ -17,8 +17,8 @@ export default function AppHeader() {
 
     const markup = (arr) => {
         return arr.map(({ id, name, url, state }) => (
-            <li className="nav-item">
-                <a className={`nav-link ${state === true ? 'isActive' : ''}`} href={url} key={id}>{name.toUpperCase()}</a>
+            <li className="nav-item" key={id}>
+                <a className={`nav-link ${state === true ? 'isActive' : ''}`} href={url}>{name.toUpperCase()}</a>
             </li>
         ))
     }

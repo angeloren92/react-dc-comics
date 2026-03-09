@@ -156,10 +156,13 @@ export default function AppMain() {
   ];
 
   const markup = (arr) => {
-    return arr.map((elememnt) => (
-      <li className="nav-item">
-        <a className={`nav-link ${state === true ? 'isActive' : ''}`} href={url} key={id}>{name.toUpperCase()}</a>
-      </li>
+    return arr.map((element) => (
+      <div className="col" key={element.id}>
+        <figure className="card rounded-0">
+          <img className="img-fluid" src={element.thumb} alt={element.title} />
+        </figure>
+        <figcaption className="text-white">{element.series.toUpperCase()}</figcaption>
+      </div>
     ))
   }
 
@@ -167,7 +170,9 @@ export default function AppMain() {
     <main className="bg-dark position-relative z-1">
       <div id="jumbotron"></div>
       <div className="container">
-        <div className="row"></div>
+        <section className="row">
+          {markup(comics)}
+        </section>
       </div>
     </main>
   )
