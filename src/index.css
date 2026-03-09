@@ -15,6 +15,7 @@ body {
   align-items: center;
   position: relative;
   
+  .isActive::after,
   .nav-link::after {
     content: "";
     position: absolute;
@@ -25,13 +26,16 @@ body {
     transition-timing-function: linear;
   }
   
+  .isActive::after,
   .nav-link:hover::after {
     border-bottom: 0.4rem solid var(--dc-blu);
   }
   
+  .isActive,
   .nav-link:hover {
     color: var(--dc-blu);
   }
+
 }
 
 
