@@ -5,17 +5,11 @@ export default function AppFooterList({ title, list }) {
       <p className="mb-2">{title}</p>
       <ul className="list-unstyled">
         {
-          list.map(element => (
-            <li><a href="#">{element}</a></li>
+          list.map((element, index) => (
+            <li key={index}><a href="#">{element}</a></li>
           ))
         }
       </ul>
     </figure>
   )
-
-
 }
-
-
-
-

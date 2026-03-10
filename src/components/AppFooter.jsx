@@ -7,10 +7,11 @@ export default function AppFooter({ lists }) {
       <div className="container h-100">
         <section className="d-flex flex-column flex-wrap align-content-start h-100">
           {
-            lists.map(element => (
+            lists.map( (element, index) => (
               <AppFooterList
-                title={element.title}
-                list={element.list}
+                key = {index}
+                title = {element.title}
+                list = {element.list}
               />
             ))
           }
