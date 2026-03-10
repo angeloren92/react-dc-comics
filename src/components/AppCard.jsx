@@ -1,11 +1,15 @@
-export default function AppCard({thumb, title, series}) {
+export default function AppCard({ thumb, title, series }) {
 
   return (
     <div className="col">
       <figure className="card rounded-0 border-0 h-100">
-        <img className="img-fluid" src={thumb} alt={title} />
-        <div className="card-body position-relative z-1 px-0">
-          <p className="text-white">{series.toUpperCase()}</p>
+        <a className="" href="#">
+          <img className="img-fluid" src={thumb} alt={title} />
+        </a>
+        <div className="card-body h-50 position-relative px-0">
+          <a href="#">
+            <p className="text-white">{series.toUpperCase()}</p>
+          </a>
         </div>
       </figure>
     </div>
