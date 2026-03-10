@@ -3,10 +3,10 @@ import AppMain from './components/AppMain'
 import AppBannerMenu from './components/AppBannerMenu'
 import AppFooter from './components/AppFooter'
 import AppBottomFooter from './components/AppBottomFooter'
-import AppCard from './components/AppCard'
 
 function App() {
 
+  /* variables for main */
   const comics = [
     {
       id: 1,
