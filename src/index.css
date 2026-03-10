@@ -79,7 +79,7 @@ main {
 
 /* jumbotron */
 #jumbotron {
-  height: 50vh;
+  height: 40vh;
   background-image: url(../public/jumbotron.jpg);
   background-repeat: no-repeat;
   background-position: top;
@@ -119,22 +119,31 @@ main {
 
 /* footer */
 footer {
+  height: 50vh;
   background-image: url(../public/dc-logo-bg.png), url(../public/footer-bg.jpg);
-  background-size: 38rem, cover;
+  background-size: 45rem, cover;
   background-position: right center, center;
   background-position-x: 80%, center;
-  background-repeat: no-repeat, repeat;
+  background-repeat: no-repeat;
   color: #909699;
   
-  .row {
+  section {
     padding: 2rem 0;
   }
 
-  ul li:first-child {
+  figure {
+    width: 9rem;
+  }
+  
+  p {
     color: white;
     font-size: larger;
     font-weight: 600;
-    padding: 0.6rem 0;
+  }
+
+  a {
+    color: rgb(155, 155, 155);
+    text-decoration: none;
   }
 
 }

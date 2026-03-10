@@ -162,12 +162,61 @@ function App() {
     },
   ];
 
+  /* variables for footer */
+const lists = [
+  {
+    title: 'DC COMICS',
+    list: [
+      'Characters',
+      'Comics',
+      'Movies',
+      'TV',
+      'Games',
+      'Videos',
+      'News'
+    ]
+  },
+  {
+    title: 'SHOP',
+    list: [
+      'Shop DC',
+      'Shop DC Collectibles'
+    ]
+  },
+  {
+    title: 'DC',
+    list: [
+      'Terms Of Use',
+      'Privacy policy (New)',
+      'Ad Choices',
+      'Advertising',
+      'Jobs',
+      'Subscriptions',
+      'Talent Workshops',
+      'CPSC Certificates',
+      'Rating',
+      'Shop Help',
+      'Contact Us'
+    ]
+  },
+  {
+    title: 'SITES',
+    list: [
+      'DC',
+      'MAD Magazine',
+      'DC Kids',
+      'DC Universe',
+      'DC Power Visa'
+    ]
+  }
+];
+
   return (
     <>
       <AppHeader />
       <AppMain cards={comics} />
       <AppBannerMenu />
-      <AppFooter />
+      <AppFooter lists={lists} />
       <AppBottomFooter />
     </>
   )

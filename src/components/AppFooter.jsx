@@ -1,52 +1,19 @@
-export default function AppFooter() {
+import AppFooterList from './AppFooterList'
+
+export default function AppFooter({ lists }) {
 
   return (
     <footer >
-      <div className="container">
-        <section className="row row-cols-2 row-cols-md-4 row-cols-lg-6">
-          <div className="col">
-            <ul className="list-unstyled">
-              <li>DC COMICS</li>
-              <li>Characters</li>
-              <li>Comics</li>
-              <li>Movies</li>
-              <li>TV</li>
-              <li>Games</li>
-              <li>Videos</li>
-              <li>News</li>
-            </ul>
-            <ul className="list-unstyled">
-              <li>SHOP</li>
-              <li>Shop DC</li>
-              <li>Shop DC Collectibles</li>
-            </ul>
-          </div>
-          <div className="col">
-            <ul className="list-unstyled">
-              <li>DC</li>
-              <li>Terms Of Use</li>
-              <li>Privacy policy (New)</li>
-              <li>Ad Choices</li>
-              <li>Advertising</li>
-              <li>Jobs</li>
-              <li>Subscriptions</li>
-              <li>Talent Workshops</li>
-              <li>CPSC Certificates</li>
-              <li>Rating</li>
-              <li>Shop Help</li>
-              <li>Contact Us</li>
-            </ul>
-          </div>
-          <div className="col">
-            <ul className="list-unstyled">
-              <li>SITES</li>
-              <li>DC</li>
-              <li>MAD Magazine</li>
-              <li>DC Kids</li>
-              <li>DC Universe</li>
-              <li>DC Power Visa</li>
-            </ul>
-          </div>
+      <div className="container h-100">
+        <section className="d-flex flex-column flex-wrap h-100 align-content-start">
+          {
+            lists.map(element => (
+              <AppFooterList
+                title={element.title}
+                list={element.list}
+              />
+            ))
+          }
         </section>
       </div>
     </footer>
