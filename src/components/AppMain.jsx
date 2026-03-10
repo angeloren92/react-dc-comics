@@ -1,3 +1,5 @@
+import AppCard from './AppCard';
+
 export default function AppMain() {
 
   const comics = [
@@ -155,24 +157,21 @@ export default function AppMain() {
     },
   ];
 
-  const markup = (arr) => {
-    return arr.map((element) => (
-      <div className="col" key={element.id}>
-        <div className="card rounded-0 border-0">
-          <img className="img-fluid" src={element.thumb} alt={element.title} />
-        </div>
-        <p className="py-2 py-md-3 py-lg-4">{element.series.toUpperCase()}</p>
-      </div>
-    ))
-  }
-
   return (
     <main className="bg-dark position-relative z-1">
       <div id="jumbotron"></div>
       <div className="container position-relative">
         <span className="label position fw-bold position-absolute translate-middle-y">CURRENT SERIES</span>
         <section className="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-6 py-5">
-          {markup(comics)}
+          {comics.map((element) => (
+            <AppCard 
+            key={element.id} 
+            thumb={element.thumb} 
+            title={element.title} 
+            series={element.series} 
+            />
+          )
+          )}
           <div className="col-12 m-auto">
             <button type="button" className="btn btn-primary w-100 rounded-0">LOAD MORE</button>
           </div>
