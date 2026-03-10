@@ -14,7 +14,7 @@ body {
   display: flex;
   align-items: center;
   position: relative;
-  
+
   .isActive::after,
   .nav-link::after {
     content: "";
@@ -25,12 +25,12 @@ body {
     transition-duration: 0.15s;
     transition-timing-function: linear;
   }
-  
+
   .isActive::after,
   .nav-link:hover::after {
     border-bottom: 0.4rem solid var(--dc-blu);
   }
-  
+
   .isActive,
   .nav-link:hover {
     color: var(--dc-blu);
@@ -51,14 +51,14 @@ main {
   .card {
     overflow: hidden;
   }
-  
+
   .img-fluid {
     aspect-ratio: 1 / 1;
     object-fit: cover;
     object-position: top;
   }
 
-  .img-fluid[alt~="Action"], 
+  .img-fluid[alt~="Action"],
   .img-fluid[alt~="Catwoman"] {
     transform-origin: top;
     transform: scale(1.6);
@@ -110,7 +110,7 @@ main {
       margin: 0.3rem;
     }
   }
-  
+
   .col:last-child a .img-fluid {
     width: 2.5rem;
     height: auto;
@@ -119,22 +119,21 @@ main {
 
 /* footer */
 footer {
-  height: 50vh;
   background-image: url(../public/dc-logo-bg.png), url(../public/footer-bg.jpg);
   background-size: 45rem, cover;
   background-position: right center, center;
-  background-position-x: 80%, center;
+  background-position-x: 80%;
   background-repeat: no-repeat;
   color: #909699;
-  
+
   section {
     padding: 2rem 0;
   }
 
   figure {
-    width: 9rem;
+    width: 12rem;
   }
-  
+
   p {
     color: white;
     font-size: larger;
@@ -146,6 +145,12 @@ footer {
     text-decoration: none;
   }
 
+}
+
+@media screen and (min-width: 650px) {
+  footer {
+    height: 30rem;
+  }
 }
 
 /* bottom-footer */

@@ -5,7 +5,7 @@ export default function AppFooter({ lists }) {
   return (
     <footer >
       <div className="container h-100">
-        <section className="d-flex flex-column flex-wrap h-100 align-content-start">
+        <section className="d-flex flex-column flex-wrap align-content-start h-100">
           {
             lists.map(element => (
               <AppFooterList
